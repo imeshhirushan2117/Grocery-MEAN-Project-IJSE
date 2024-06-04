@@ -38,7 +38,7 @@ function Hero() {
 
             
       <Typography className='headName' variant="h3" gutterBottom>
-        Groccery
+        Welcome to Hiru Grocery
       </Typography>
 
             <img src="https://i.postimg.cc/2Sxgb4th/pho.jpg" style={{ height: '63vh' }} class="d-block w-100" />

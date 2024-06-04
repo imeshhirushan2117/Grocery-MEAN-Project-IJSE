@@ -15,6 +15,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { FaUserTie } from "react-icons/fa";
 
 function Copyright(props) {
   return (
@@ -35,8 +36,8 @@ const defaultTheme = createTheme();
 
 export default function LogIn() {
 
-  const [signinEmail, setEmail] = useState("");
-  const [signinPassword, setPassword] = useState("");
+  const [signinEmail, setEmail] = useState("kasun@gmail.com");
+  const [signinPassword, setPassword] = useState("123456789");
 
   const navigate = useNavigate();
 
@@ -79,10 +80,10 @@ export default function LogIn() {
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
+            <FaUserTie />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in  Customer
+            Customer Panel
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField

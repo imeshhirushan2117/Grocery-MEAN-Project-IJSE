@@ -15,6 +15,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { RiAdminFill } from "react-icons/ri";
 
 function Copyright(props) {
   return (
@@ -33,8 +34,8 @@ const defaultTheme = createTheme();
 
 export default function AdminLogIn() {
 
-  const [signinEmail, setEmail] = useState();
-  const [signinPassword, setPassword] = useState();
+  const [signinEmail, setEmail] = useState("imesh@gmail.com");
+  const [signinPassword, setPassword] = useState("123456789");
 
   const navigate = useNavigate();
 
@@ -81,10 +82,10 @@ export default function AdminLogIn() {
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-            <LockOutlinedIcon />
+            <RiAdminFill />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Sign in Admin
+          Admin Panel
           </Typography>
           <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
             <TextField

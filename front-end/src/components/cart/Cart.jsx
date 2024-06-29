@@ -10,7 +10,10 @@ import { useEffect } from 'react';
 import './Cart.css'
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
+import cardImg from '../../assets/img/card.jpg'
 // const AdminDash = require('../admindash/AdminDash')
+
+
 
 export default function Cart() {
 
@@ -68,14 +71,17 @@ export default function Cart() {
     <Card sx={{display:'flex', flexDirection:'row', gap:5, padding:8, flexWrap:'wrap',marginLeft:'20'}}>
 
         {items.map(item => (
-      <CardActionArea key={item._id} sx={{ maxWidth: '20%', flexBasis: '20%', flexGrow: 1 }}>
+      <CardActionArea  key={item._id} sx={{ maxWidth: '20%', flexBasis: '20%', flexGrow: 1 }}>
         <CardMedia
           component="img"
           height="140"
-          image="https://i.postimg.cc/3xMYr8Mm/3524.jpg"
+          // image="https://i.postimg.cc/3xMYr8Mm/3524.jpg"
+          image={cardImg}
           alt="green iguana"
+          sx={{ borderRadius:'5px'}}
+  
         />
-        <CardContent style={{ border:1}}>
+        <CardContent style={{ border:1}} sx={{background:'#81d4fa'}}>
           <Typography gutterBottom variant="h5" component="div"  value={itemCode}
           onChange={(e) => setItemCode(e.target.value)}>
           {item.itemCode}

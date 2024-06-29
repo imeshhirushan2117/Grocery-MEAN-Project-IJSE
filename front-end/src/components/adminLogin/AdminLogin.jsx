@@ -34,8 +34,8 @@ const defaultTheme = createTheme();
 
 export default function AdminLogIn() {
 
-  const [signinEmail, setEmail] = useState("imesh@gmail.com");
-  const [signinPassword, setPassword] = useState("123456789");
+  const [signinEmail, setEmail] = useState("");
+  const [signinPassword, setPassword] = useState("");
 
   const navigate = useNavigate();
 

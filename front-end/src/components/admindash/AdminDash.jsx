@@ -64,8 +64,6 @@ export default function AdminDash() {
     itemPrice="";
     qtyOnHand="";
   };
-  
-
   const handleDeleteItem = (id) => {
     axios.delete('http://localhost:3500/api/v1/deleteItem/'+id)
     .then(res => {console.log(res)

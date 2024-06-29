@@ -89,6 +89,12 @@ export default function ViewOrders() {
 
 
   return (
+ <>
+
+<div>
+  <h1>My Orders</h1>
+</div>
+
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
@@ -120,5 +126,6 @@ export default function ViewOrders() {
         </TableBody>
       </Table>
     </TableContainer>
+ </>
   );
 }

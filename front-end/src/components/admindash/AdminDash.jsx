@@ -33,7 +33,7 @@ export default function AdminDash() {
   }, [])
 
   const fetchDataFromServer = () => {
-    // Your code to fetch data from the server goes here
+  
     axios.get('http://localhost:3500/api/v1/getItem')
       .then((res) => {
         setItems(res.data);
@@ -51,13 +51,20 @@ export default function AdminDash() {
         console.log(items)
         fetchDataFromServer();
         alert("Saved");
-
       })
       .catch(err => {
         console.log(err)
         alert("Failed");
       })
   }
+
+
+  const clear = () => {
+    itemName="";
+    itemPrice="";
+    qtyOnHand="";
+  };
+  
 
   const handleDeleteItem = (id) => {
     axios.delete('http://localhost:3500/api/v1/deleteItem/'+id)
@@ -66,7 +73,6 @@ export default function AdminDash() {
     })
     .catch(err => console.log(err))
   }
-
 
 
   return (

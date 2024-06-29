@@ -84,7 +84,7 @@ export default function Cart() {
         <CardContent style={{ border:1}} sx={{background:'#81d4fa'}}>
           <Typography gutterBottom variant="h5" component="div"  value={itemCode}
           onChange={(e) => setItemCode(e.target.value)}>
-          {item.itemCode}
+          {/* {item.itemCode} */}
           </Typography>
           <Typography gutterBottom variant="h5" component="div"  value={itemName}
           onChange={(e) => setItemName(e.target.value)}>

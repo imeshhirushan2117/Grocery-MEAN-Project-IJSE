@@ -133,8 +133,6 @@ export default function OrdersCart(props) {
          View Orders
      </Button>
 
-      <label></label>
-
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">
           <TableHead>

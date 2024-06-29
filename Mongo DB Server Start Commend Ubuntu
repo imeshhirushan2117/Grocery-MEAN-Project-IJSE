@@ -1,0 +1,3 @@
+Start the MongoDB Service:------> sudo systemctl start mongod.service 
+
+Check the MongoDB Service Status:------> sudo systemctl status mongod
